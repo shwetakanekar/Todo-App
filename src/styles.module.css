@@ -9,3 +9,32 @@ body {
     padding: 1rem 2.5rem;
     font-size: 2rem;
 }
+
+.todoForm {
+    width: 80%;
+    min-width: 250px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.todoInput {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.todoInput:focus {
+    outline: none;
+    border-bottom: 2px solid teal;
+}
+
+.todoButton {
+    background-color: teal;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+}
