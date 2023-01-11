@@ -1,9 +1,9 @@
 import styles from '../styles.module.css';
 
-const Todo = () => {
+const Todo = ({ todoItem }) => {
   return (
     <div className={styles.todoItem}>
-      <div className={styles.todo}>Task</div>
+      <div className={styles.todo}>{todoItem}</div>
       <svg
         cursor="pointer"
         height="1.4rem"
