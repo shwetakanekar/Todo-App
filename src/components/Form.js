@@ -10,7 +10,6 @@ const Form = ({ todo, setTodo, todoList, setTodoList }) => {
     event.preventDefault();
     setTodoList([...todoList, { name: todo, id: shortid.generate() }]);
     setTodo('');
-    console.log(todoList);
   };
 
   return (

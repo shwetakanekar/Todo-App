@@ -1,10 +1,15 @@
 import styles from '../styles.module.css';
 
-const Todo = ({ todoItem }) => {
+const Todo = ({ todoItem, todoList, setTodoList }) => {
+  const handleDelete = () => {
+    setTodoList(todoList.filter((item) => item.id !== todoItem.id));
+  };
+
   return (
     <div className={styles.todoItem}>
       <div className={styles.todo}>{todoItem.name}</div>
       <svg
+        onClick={handleDelete}
         cursor="pointer"
         height="1.4rem"
         xmlns="http://www.w3.org/2000/svg"
