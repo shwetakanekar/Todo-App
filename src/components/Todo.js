@@ -3,7 +3,7 @@ import styles from '../styles.module.css';
 const Todo = ({ todoItem }) => {
   return (
     <div className={styles.todoItem}>
-      <div className={styles.todo}>{todoItem}</div>
+      <div className={styles.todo}>{todoItem.name}</div>
       <svg
         cursor="pointer"
         height="1.4rem"
